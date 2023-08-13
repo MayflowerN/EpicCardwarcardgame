@@ -16,7 +16,10 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Image("background")
+                .resizable()
                 .ignoresSafeArea()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            
             
             VStack {
                 Spacer()
@@ -83,6 +86,10 @@ struct ContentView: View {
             
             
             .padding()
+            .navigationBarHidden(true)
+          
+         
+
         }
     }
     
